@@ -2,8 +2,7 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorAccent">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/img_day"
@@ -12,10 +11,10 @@
         android:scaleType="centerCrop"
         android:contentDescription="@string/app_name"/>
 
-    <!--<android.support.v4.widget.DrawerLayout-->
-        <!--android:id="@+id/drawer_layout"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent">-->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <android.support.v4.widget.SwipeRefreshLayout
             android:id="@+id/swipe_refresh"
@@ -51,10 +50,11 @@
             </ScrollView>
         </android.support.v4.widget.SwipeRefreshLayout>
 
-        <!--<fragment-->
-            <!--android:id="@+id/choose_area_fragment"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_gravity="start"/>-->
-    <!--</android.support.v4.widget.DrawerLayout>-->
+        <fragment
+            android:id="@+id/choose_area_fragment"
+            android:name="cn.studyjams.s2.a0123.wujiweather.ChooseAreaFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"/>
+    </android.support.v4.widget.DrawerLayout>
 </FrameLayout>
